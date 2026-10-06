@@ -32,6 +32,12 @@ the browser — no login, no install.
 
   Students open `http://<laptop-ip>:8888` (notebook, use the token printed in
   the terminal) or `http://<laptop-ip>:8866` (Voilà).
+* **Gamepads** (section 10): Xbox/PlayStation pads over USB or Bluetooth.
+  The browser only reports the pad after a button is pressed on it.
+  Browsers expose gamepads only on HTTPS or `localhost`, so the pad works
+  on Binder and on the laptop running the server, but **not** for students
+  connecting over plain `http://<laptop-ip>` in the offline setup. They can
+  use the on-screen buttons instead.
 
 ## Implementation notes
 
